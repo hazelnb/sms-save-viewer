@@ -3,6 +3,10 @@
   --false-color: #EB5353;
 }
 
+:not(:defined) {
+  display: none;
+}
+
 .expander {
   width:100%;
   height: 100%;

@@ -1,0 +1,43 @@
+ECLIPSE SHINES are at offset 0x254 from section 1 starting at flag 0x6040
+
+ERTO & 0x01 = Shine 6
+ERTO & 0x02 = Shine 5
+ERTO & 0x04 = Shine 3
+ERTO & 0x08 = Shine 4
+ERTO & 0x10 = Shine 2
+ERTO & 0x20 = Shine 1
+ERTO & 0x40 = Shine 7
+ERTO & 0x80 = Shine 8
+ERTO & 0x01 = Rocket secret shine
+ERTO & 0x02 = Secret red coins shine
+LIGHTHOUSE & 0x04-0x08
+WARSHIP    & 0x10-0x20
+LACRIMA    & 0x40-0x80
+PIT & 0x01 = Top of the great tree
+PIT & 0x02 = Tramplin Stu Monster on the Loose
+PIT & 0x04 = Tree Top Village Chuckster
+PIT & 0x08 = Cheep-Cheep Chow Down
+PIT & 0x10 = Douse the Campfires
+PIT & 0x20 = Mega Mushroom Ground Pound
+CRUISER & 0x40 = Job for a Plumbr
+CRUISER & 0x80 = Dine N' Dash
+CRUISER & 0x01 = Durian Excursion
+CRUISER & 0x02 = Flight Path Peril
+CRUISER & 0x04 = Flight Path Peril Red Coins
+DREAM     & 0x08-0x40
+LANCIA    & 0x80-0x04
+VAPORWAVE & 0x08-0x40
+YOSHI     & 0x80-0x04
+RED LILY  & 0x08-0x40
+P BEACH   & 0x80-0x04
+CASINO    & 0x08-0x40
+I. DELFINO & 0x80 = Bollente Crypt
+I. DELFINO & 0x01 = Arido Trail
+I. DELFINO & 0x02 = Arcobaleno Cove
+I. DELFINO & 0x04 = Sonnolento Grove
+I. DELFINO & 0x08 = Rugivosa Marsh
+I. DELFINO & 0x10 = Giovane Creek
+I. DELFINO & 0x20 = Marea Reef
+I. DELFINO & 0x40 = Ricco Station
+& 0x80, 0x01-0x80, 0x01-0x08 100 Coins, in order (starting at rel 0x0010)
+I. DELFINO & 0x10 = Delfino Express
