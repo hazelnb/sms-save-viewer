@@ -19,7 +19,7 @@ PIT & 0x04 = Tree Top Village Chuckster
 PIT & 0x08 = Cheep-Cheep Chow Down
 PIT & 0x10 = Douse the Campfires
 PIT & 0x20 = Mega Mushroom Ground Pound
-CRUISER & 0x40 = Job for a Plumbr
+CRUISER & 0x40 = Job for a Plumber
 CRUISER & 0x80 = Dine N' Dash
 CRUISER & 0x01 = Durian Excursion
 CRUISER & 0x02 = Flight Path Peril
@@ -41,3 +41,6 @@ I. DELFINO & 0x20 = Marea Reef
 I. DELFINO & 0x40 = Ricco Station
 & 0x80, 0x01-0x80, 0x01-0x08 100 Coins, in order (starting at rel 0x0010)
 I. DELFINO & 0x10 = Delfino Express
+
+CASTLE & 0x40 = E3 Dolpic Town
+CASTLE & 0x80 = Beta Ricco
