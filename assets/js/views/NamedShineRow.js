@@ -12,7 +12,7 @@ const NamedShineRow = {
         
         return m("sl-details", [
                     m("div", {slot: "summary"}, [
-                        m("img", {src: "/assets/img/shine.png", style: "width: 1.2em;height: 1.2em;margin-bottom: -4px;margin-left: -2px;"}),
+                        m("img", {src: "./assets/img/shine.png", style: "width: 1.2em;height: 1.2em;margin-bottom: -4px;margin-left: -2px;"}),
                         " × " + area.shine_count.toString()+"/"+area.shine_state.length.toString()
                     ]),
                     (n_missing != 0) ? m("span.missing", "Missing: " + area.missing_shines) : null, 
