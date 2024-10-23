@@ -15,6 +15,9 @@ class VanillaArea extends Area {
     }
 
     shine_address(n) {
+        if (this.id == 8) {
+            return 8*0xE + 7;
+        }
         if ((n < 10) || (n < 30 && this.id == 7)) {
             return 10 * this.shine_idx + n
         } else if (30 <= n && n <= 41) {

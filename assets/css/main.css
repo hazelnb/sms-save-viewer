@@ -58,7 +58,6 @@ sl-details::part(summary) {
 
 sl-details::part(header) {
   padding: 0;
-  padding-left: .75em;
   color: white;
 }
 
@@ -83,10 +82,18 @@ span.have {
   text-indent: -2.75em;
   padding-left: 2.75em;
 }
+
 th.corner {
   font-weight: normal;
   font-style: italic;
   text-decoration: wavy underline;
+}
+
+th.coin {
+  background-image: url(/assets/img/coin.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 tbody tr:hover > th {

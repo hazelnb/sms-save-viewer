@@ -78,14 +78,13 @@ export default {
                 "Blue coin Shine #24",
                 "Underbell",
                 "Beach",
-                "Gold bird",
-                "Bowser"
+                "Gold bird"
             ]
         },
         {
             "id": 8,
             "name": "Corona Mountain",
-            "n_shines": 0,
+            "n_shines": 1,
             "n_blues": 10,
             "blues_idx": 7
         }

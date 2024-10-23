@@ -4,11 +4,16 @@ import Areas from "../models/Areas.js";
 
 const ShineTable = {
     view: () => {
-      const SHINE_NAMES = ["1", "2", "3", "4", "5", "6", "7", "8", "Secret 1", "Secret 2", "100 Coins"]
+        const SHINE_NAMES = ["1", "2", "3", "4", "5", "6", "7", "8"]
   
-      return m("table#shineTable", 
-               [m("tr", [m("th.corner", "Shines"), ...SHINE_NAMES.map((name) => m("th", name))]),
-                ...Areas.list.map((area) => m(ShineRow, {area}))]
+        return m("table#shineTable", [
+            m("thead", m("tr", [
+                m("th.corner", "Shines"), 
+                ...SHINE_NAMES.map((name) => m("th", name)),
+                m("th", {colspan: 2}, "???"),
+                m("th.coin")
+            ])),
+                m("tbody", Areas.list.map((area) => m(ShineRow, {area})))]
               )
     }
 }
