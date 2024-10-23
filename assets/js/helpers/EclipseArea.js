@@ -1,5 +1,5 @@
 import Area from "./Area.js"
-import ECLIPSE_METADATA from "/assets/data/eclipse.js";
+import ECLIPSE_METADATA from "../../data/eclipse.js";
 
 class EclipseArea extends Area {
     static metadata = ECLIPSE_METADATA;

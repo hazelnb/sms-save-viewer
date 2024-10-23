@@ -1,5 +1,5 @@
 import Area from "./Area.js"
-import VANILLA_METADATA from "/assets/data/vanilla.js";
+import VANILLA_METADATA from "../../data/vanilla.js";
 
 class VanillaArea extends Area {
     static metadata = VANILLA_METADATA;
