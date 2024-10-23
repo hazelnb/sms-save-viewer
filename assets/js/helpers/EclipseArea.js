@@ -7,17 +7,19 @@ class EclipseArea extends Area {
     SHINE_BASE = 0x254 * 8;
     BLUES_BASE = 0x47 * 8 + 2;
 
-    constructor({ id, name, n_shines, n_blues, blues_idx = null, shine_idx = null, shine_names = null }) {
+    constructor({ id, name, n_shines, n_blues, blues_idx = null, shine_idx = null, shine_names = null, blues_subway_circuit_url = null }) {
         n_shines = (!!n_shines || n_shines === 0) ? n_shines : 11
         n_blues = (!!n_blues || n_blues === 0) ? n_blues : 20
         blues_idx = blues_idx || (id - 9)
         shine_idx = shine_idx || (id - 9)
 
         super({ metadata: ECLIPSE_METADATA, id, name, n_shines, n_blues, blues_idx, shine_idx, shine_names })
+
+        this.blues_subway_circuit_url = blues_subway_circuit_url
     };
 
     shine_address(n) {
-        if (n != (this.n_shines - 1)) {
+        if (n != (this.shine_state.length - 1)) {
             if (this.shine_idx <= 4) { // 11-shine stages
                 if (this.shine_idx == 0 && n < 6) {
                     n = [5, 4, 2, 3, 1, 0][n] // erto permutation
@@ -38,8 +40,10 @@ class EclipseArea extends Area {
         return this.BLUES_BASE + 20 * this.blues_idx + n;
     };
 
-    url(n) {
-        return "";
+    url(key, n) {
+        console.log(key, n)
+        let blue = this.blues_data[n-1]
+        return this.blues_subway_circuit_url + "&t=" + blue.subway_circuit_t
     }
 }
 
