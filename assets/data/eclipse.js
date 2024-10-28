@@ -115,6 +115,33 @@ export default {
 				"Ricco Station",
 				"Delfino Express"
 			]
+		},
+		{
+			"id": 23,
+			"name": "Delfino Plaza",
+			"n_shines": 19,
+			"n_blues": 0,
+			"shine_names": [
+				"Blue coin Shine #25",
+                "Blue coin Shine #26",
+                "Blue coin Shine #27",
+                "Blue coin Shine #28",
+                "Blue coin Shine #29",
+                "Blue coin Shine #30",
+                "Blue coin Shine #31",
+                "Blue coin Shine #32",
+                "Blue coin Shine #33",
+                "Blue coin Shine #34",
+                "Blue coin Shine #35",
+                "Blue coin Shine #36",
+                "Blue coin Shine #37",
+                "Blue coin Shine #38",
+                "Blue coin Shine #39",
+                "Blue coin Shine #40",
+				"Blue coin Shine #41",
+				"Blue coin Shine #42",
+				"Beat 2nd bowser"
+			]
 		}
 	],
 	"blues_metadata": {
@@ -1224,6 +1251,7 @@ export default {
 				"subway_circuit_t": 208
 			}
 		],
-		"22": []
+		"22": [],
+		"23": []
 	}
 }

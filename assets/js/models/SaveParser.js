@@ -13,6 +13,7 @@ class SaveParser {
     readSave(e) {
         const file = e.target.files[0];
 
+
         if (file) {
             this.reader.addEventListener("loadend", this.parseSave.bind(this));
             this.reader.readAsArrayBuffer(file);
@@ -31,7 +32,7 @@ class SaveParser {
         if (!State.is_eclipse) {
             Areas.list = [... VanillaAreas]
         }
-        
+
         m.route.set("/summary")
     };
     

@@ -124,7 +124,7 @@ td a {
 
 table {
   display: inline-block;
-  width: auto;
+  min-width: max-content;
   table-layout: fixed;
   overflow: visible;
   margin: 10px;
@@ -133,6 +133,8 @@ table {
 #tables {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  width: min-content;
 }
 
 /* #bluesTable {
@@ -143,13 +145,17 @@ table {
 #summaryLayout {
   color: white;
   background-color: #00000055;
-  margin: 10px;
+  width: fit-content;
+  max-width: max-content;
+  margin: auto;
   padding: 5px;
   border-radius: 1vw;
+  margin-top: 7em;
 }
 
 fieldset {
   display: inline-block;
+  width: max-content;
 }
 :root {
   --rivet-inset: 18px;
@@ -179,10 +185,20 @@ fieldset {
   height: var(--box-height);
   background-color: #0211dd95;
   border-radius: 1.8vw;
-  position: relative;
+  position: absolute;
   top: calc(50% - var(--box-height)/2);
+  left: calc(50% - var(--box-width)/2);
   margin: auto;
 }
+
+.titleBox {
+  --box-height: 5em;
+  --box-width: 27em;
+  top: 1em;
+  font-family: "Super Mario 256";
+  text-shadow:0px 0px 0 rgb(-16,100,188),-1px 1px 0 rgb(-22,94,182),-2px 2px 0 rgb(-29,87,175),-3px 3px 0 rgb(-35,81,169),-4px 4px 0 rgb(-41,75,163), -5px 5px 0 rgb(-47,69,157),-6px 6px 5px rgba(0,0,0,0.2),-6px 6px 1px rgba(0,0,0,0.5),0px 0px 5px rgba(0,0,0,.2);}
+
+
 
 .uploadBox {
   --box-height: 250px;
@@ -240,6 +256,14 @@ body {
 .box > .contents {
   padding-top: 40px;
 }
+
+.titleBox > .contents {
+  padding-top: .8em;
+  margin: auto;
+  font-size:xx-large;
+  color: #e9f6fd;
+}
+
 
 #uploadForm {
    padding-top: 10%;  

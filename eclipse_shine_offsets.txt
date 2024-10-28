@@ -59,5 +59,7 @@ I. DELFINO & 0x40 = Ricco Station
 & 0x80, 0x01-0x80, 0x01-0x08 100 Coins, in order (starting at rel 0x000A)
 I. DELFINO & 0x10 = Delfino Express
 
+PLAZA & 0x20-0x80
+
 CASTLE & 0x40 = E3 Dolpic Town
 CASTLE & 0x80 = Beta Ricco

@@ -30,9 +30,11 @@ class EclipseArea extends Area {
                 return this.SHINE_BASE + 10 * 4 + 11 + 4 * (this.shine_idx - 6) + n;
             } else if (this.shine_idx == 5) {
                 return this.SHINE_BASE + 10 * 4 + 6 + n;
+            } else if (this.shine_idx == 14) {
+                return this.SHINE_BASE + this.HUNDRED_COIN_OFFSET + this.shine_idx + n;
             }
         } else {
-            return this.SHINE_BASE + this.HUNDRED_COIN_OFFSET + this.shine_idx;
+            return this.SHINE_BASE + this.HUNDRED_COIN_OFFSET + this.shine_idx + ((this.shine_idx == 14) ? 18 : 0);
         }
     };
 
