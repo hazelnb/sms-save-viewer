@@ -1,3 +1,3 @@
-# url: "//hazelnb.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-# baseurl: "/sms-save-viewer" # the subpath of your site, e.g. /blog
+url: "//hazelnb.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/sms-save-viewer" # the subpath of your site, e.g. /blog
 title: "Sunshine Scorecard" # the name of your site, e.g. ACME Corp.
