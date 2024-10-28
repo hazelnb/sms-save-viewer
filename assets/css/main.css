@@ -8,9 +8,11 @@
 }
 
 html, body, #app {
-  height: 100%;
+  /* height: 100%; */
   width: 100%;
   margin: 0;
+
+  font-family: "Open Sans";
 }
 
 .expander {
@@ -287,4 +289,22 @@ body {
   top: -.2em;
   background-size: cover;
   background-image: url("../img/pointer.png")
+}
+
+
+footer {
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  width: 100vw;
+  padding-bottom: 1em;
+}
+
+footer.summaryLayout{
+  position: unset;
+  padding-top: 1em;
+}
+
+.icon {
+  vertical-align: middle;
 }
