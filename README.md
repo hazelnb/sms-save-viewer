@@ -1,6 +1,6 @@
 # Sunshine Scorecard
 
-Are you on your 100th Mario Sunshine replay but somehow _still_ always miss one pesky blue coin? Just upload your `.gci` save file and see exactly which coin it is in two possible numbering schemes. It also supports save files for Eclipse, which should be detected automatically. In addition to showing you which blues are missing, if you click on any blue coin, it will take you directly to the corresponding page.
+Are you on your 100th Mario Sunshine replay but somehow _still_ always miss one pesky blue coin? Just upload your `.gci`, `.gcs` or `.sav` save file and see exactly which coin it is in two possible numbering schemes. It also supports save files for Eclipse, which should be detected automatically. In addition to showing you which blues are missing, if you click on any blue coin, it will take you directly to the corresponding page.
 
 ## Credits
 

@@ -13,7 +13,7 @@ class SaveParser {
     readSave(e) {
         const file = e.target.files[0];
 
-
+        
         if (file) {
             this.reader.addEventListener("loadend", this.parseSave.bind(this));
             this.reader.readAsArrayBuffer(file);
@@ -21,12 +21,18 @@ class SaveParser {
     };
     
     parseSave(e) {
-        this.buffer = this.reader.result;
+        this.buffer = this.detectFmt(this.reader.result);
         this.view = new DataView(this.buffer);
+
+        let game_id = String.fromCharCode(... new Uint8Array(this.buffer.slice(0,6)))
         
+        if (! game_id.match(/GMS[A-Z]0[14]/)) {
+            console.error("Uploaded invalid save file")
+            return
+        }
+
         this.chooseNewestBlocks();
         this.updateAreas();
-        let game_id = String.fromCharCode(... new Uint8Array(this.buffer.slice(0,6)))
         State.is_eclipse = (game_id == "GMSE04")
         
         if (!State.is_eclipse) {
@@ -35,6 +41,19 @@ class SaveParser {
 
         m.route.set("/summary")
     };
+
+    detectFmt(buffer) {
+        const gcs_string = String.fromCharCode(... new Uint8Array(buffer.slice(0,6)))
+        const sav_string = String.fromCharCode(... new Uint8Array(buffer.slice(0,0x0C)))
+
+        if (gcs_string == "GCSAVE") {
+            return buffer.slice(0x110)
+        } else if (sav_string == "DATELGC_SAVE") {
+            return buffer.slice(0x80)
+        } else {
+            return buffer
+        }
+    }
     
     chooseNewestBlocks() {
         const A1SEC1 = 0x20A0
