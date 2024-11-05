@@ -6,18 +6,19 @@ const SlotSelect = {
     view: () => {
         const fnames = ["A", "B", "C"];
 
-        return m("fieldset#slotSelectRadio", [
-            m("legend", "Choose save slot"),
-            ...fnames.map((key) => {
-                return m("div", [m("input", {type: "radio", 
+        return m("fieldset#slotSelectRadio", 
+            fnames.map((key) => {
+                return m("span", [m("input", {type: "radio", 
                                              id: key, 
                                              name: "slot_select", 
                                              value: key, 
                                              checked: (State.selected_slot === key), 
                                              onchange: Parser.swapSlot.bind(Parser)}),
-                                 m("label", {for: key}, "File " + key)]);
+                                 m("label", {for: key}, 
+                                    m("img", {src: "./assets/img/"+key+"_block.png", width: "100em"})
+                                 )]);
           }),
-        ])
+        )
       }
 }
 
