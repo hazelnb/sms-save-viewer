@@ -1,5 +1,4 @@
 ECLIPSE SHINES are at offset 0x254 from section 1 starting at flag 0x6040
-I THINK HUNDRED COINS ARE WRONG
 
 ERTO & 0x01 = Shine 6
 ERTO & 0x02 = Shine 5
@@ -15,9 +14,12 @@ ERTO & 0x02 = Secret red coins shine
 LIGHTHOUSE & 0x04-0x80
 
 LIGHTHOUSE & 0x01-0x08
-WARSHIP    & 0x10-0x80
+WARSHIP    & 0x10 = Shine 1
+WARSHIP    & 0x20 = Shine 2
+WARSHIP    & 0x40 = Shine 4
+WARSHIP    & 0x80 = Shine 3
 
-WARSHIP    & 0x01-0x20 
+WARSHIP    & 0x01-0x20
 LACRIMA    & 0x40-0x80
 
 LACRIMA    & 0x01-0x80 

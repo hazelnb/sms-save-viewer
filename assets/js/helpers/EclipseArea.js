@@ -25,6 +25,10 @@ class EclipseArea extends Area {
                     n = [5, 4, 2, 3, 1, 0][n] // erto permutation
                 }
 
+                if (this.shine_idx == 2 && (n == 2 || n == 3)) { // warship permutation
+                    n = (n==2) ? 3 : 2;
+                }
+
                 return this.SHINE_BASE + 10 * this.shine_idx + n;
             } else if (this.shine_idx > 5 && this.shine_idx <= 13) {
                 return this.SHINE_BASE + 10 * 4 + 11 + 4 * (this.shine_idx - 6) + n;
