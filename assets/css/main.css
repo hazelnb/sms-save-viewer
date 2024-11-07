@@ -341,7 +341,7 @@ footer.summaryLayout{
 
 #slotSelectRadio input[type="radio"]:checked+label::after {
   content: "";
-  background-image: url(/assets/img/pointer.png);
+  background-image: url(../img/pointer.png);
   background-size: contain;
   background-repeat: no-repeat;
   width: 50px;
