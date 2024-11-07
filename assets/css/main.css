@@ -259,6 +259,11 @@ body {
   background-image: url("../img/Arches.png");
 }
 
+.box > a.contents {
+    text-decoration: none;
+    display: block;
+}
+
 .box > .contents {
   padding-top: 40px;
 }
